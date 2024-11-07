@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 2.2</title>
+</head>
+<body>
+    <h1>lab2-2</h1>
+    <p>Результати всіх функцій виведені в консоль</p>
+    <a href="index.html">← Back</a>
+    <script src="lab2-2.js"></script>
+    <script>
+        let ip = prompt("Перевірка ip-адреси. \nВведіть ip-адрес:")
+        let rgba = prompt("Перевірка RGBA. \nВведіть RGBA:")
+        let hex = prompt("Перевірка HEX. \nВведіть HEX:")
+        let tags_text = prompt("Пошук тегів в тексті. \nВведіть текст з тегами:");
+        let tag_name = prompt("Введіть ім'я тегу:")
+        let numbers_text = prompt("Пошук додатніх чисел в тексті. \nВведіть текст з числами:");
+        let dates_text = prompt("Пошук дат в тексті. \nВведіть текст з датою:");
+        
+        console.log(isIPAddress(ip));
+        console.log(findRGBA(rgba));
+        console.log(findHexColor(hex));
+        console.log(findTags(tags_text, tag_name));
+        console.log(findPosNum(numbers_text));
+        console.log(findDates(dates_text));
+    </script>
+</body>
+</html>
